@@ -1,0 +1,39 @@
+{
+  "name": "Render Complete Email",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "1",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [240, 180]
+    },
+    {
+      "parameters": {
+        "fromEmail": "studio@example.com",
+        "toEmail": "{{ $json.recipient }}",
+        "subject": "Executive render ready",
+        "text": "Hello,\nYour render {{ $json.render_id }} is ready. View here: {{ $json.artifact_url }}"
+      },
+      "id": "3",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.sendEmail",
+      "typeVersion": 2,
+      "position": [540, 180]
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Send Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}

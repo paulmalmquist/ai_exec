@@ -1,0 +1,7 @@
+channels:
+  - channel: public
+    requires_approval: true
+  - channel: external
+    requires_approval: true
+  - channel: internal
+    requires_approval: false

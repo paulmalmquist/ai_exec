@@ -1,0 +1,6 @@
+<div class="video-frame" *ngIf="source; else placeholder">
+  <video controls [src]="source"></video>
+</div>
+<ng-template #placeholder>
+  <div class="video-frame empty">No preview available</div>
+</ng-template>

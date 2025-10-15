@@ -1,0 +1,8 @@
+service:
+  grpc_port: 6334
+  http_port: 6333
+storage:
+  path: /qdrant/storage
+  on_disk_payload: true
+cluster:
+  enabled: false
