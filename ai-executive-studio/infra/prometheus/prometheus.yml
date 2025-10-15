@@ -1,0 +1,16 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: prometheus
+    static_configs:
+      - targets: ['prometheus:9090']
+  - job_name: services
+    static_configs:
+      - targets:
+          - orchestrator:8000
+          - tts_xtts:8000
+          - alignment:8000
+          - lipsync:8000
+          - avatar:8000
+          - compositor:8000

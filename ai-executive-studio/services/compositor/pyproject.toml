@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "ai-executive-compositor"
+version = "0.1.0"
+description = "Video compositor"
+authors = ["AI Executive Studio <dev@ai-exec.local>"]
+readme = "README.md"
+packages = [{ include = "app" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "0.110.0"
+uvicorn = { extras = ["standard"], version = "0.27.1" }
+structlog = "23.2.0"
+opentelemetry-sdk = "1.24.0"
+opentelemetry-api = "1.24.0"
+opentelemetry-exporter-otlp = "1.24.0"
+opentelemetry-instrumentation-fastapi = "0.45b0"
+prometheus-fastapi-instrumentator = "6.1.0"
+moviepy = "1.0.3"
+imwatermark = "0.1.6"
+python-multipart = "0.0.9"
+pyjwt = "2.8.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "8.1.1"
+httpx = "0.27.0"
+ruff = "0.3.3"
+
+[build-system]
+requires = ["poetry-core>=1.8.0"]
+build-backend = "poetry.core.masonry.api"
