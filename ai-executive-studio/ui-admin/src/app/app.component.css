@@ -1,0 +1,23 @@
+.app-header {
+  background: var(--brand-primary);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-header nav a {
+  margin-right: 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.app-header nav a.active {
+  color: var(--brand-accent);
+}
+
+.app-main {
+  padding: 2rem;
+}

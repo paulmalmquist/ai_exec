@@ -1,0 +1,15 @@
+:root {
+  --brand-primary: #1c4b82;
+  --brand-accent: #f0b429;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f5f7fb;
+  color: #1a1a1a;
+}
+
+a {
+  color: var(--brand-primary);
+}

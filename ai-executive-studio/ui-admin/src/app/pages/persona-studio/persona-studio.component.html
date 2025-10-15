@@ -1,0 +1,17 @@
+<section class="panel">
+  <h2>Persona Studio</h2>
+  <form (ngSubmit)="save()" [formGroup]="form">
+    <label>Name<input type="text" formControlName="name" /></label>
+    <label>Style Guidelines<textarea formControlName="styleGuidelines"></textarea></label>
+    <label>Assertiveness<input type="range" min="0" max="100" formControlName="assertiveness" /></label>
+    <label>Formality<input type="range" min="0" max="100" formControlName="formality" /></label>
+    <label>Argumentativeness<input type="range" min="0" max="100" formControlName="argumentativeness" /></label>
+    <label>Risk Posture<select formControlName="riskPosture"><option value="low">Low</option><option value="medium">Medium</option><option value="high">High</option></select></label>
+    <button type="submit">Save Persona</button>
+  </form>
+
+  <article class="sample-output" *ngIf="sampleOutput">
+    <h3>Sample Output</h3>
+    <p>{{ sampleOutput }}</p>
+  </article>
+</section>
