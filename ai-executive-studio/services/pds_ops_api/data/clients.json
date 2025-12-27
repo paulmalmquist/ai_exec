@@ -1,0 +1,5 @@
+[
+  {"id": 1, "name": "Horizon Logistics", "satisfaction_score": 4.1, "pipeline_value": 2500000, "strategic_priority": 5},
+  {"id": 2, "name": "Vista Retail Group", "satisfaction_score": 3.6, "pipeline_value": 1800000, "strategic_priority": 4},
+  {"id": 3, "name": "Quantum Tech", "satisfaction_score": 4.4, "pipeline_value": 3200000, "strategic_priority": 5}
+]
