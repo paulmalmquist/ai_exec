@@ -4,11 +4,13 @@ import { VoiceLabComponent } from './pages/voice-lab/voice-lab.component';
 import { ScriptBuilderComponent } from './pages/script-builder/script-builder.component';
 import { RenderQueueComponent } from './pages/render-queue/render-queue.component';
 import { BrandingComponent } from './pages/branding/branding.component';
+import { ExecutiveAutomationComponent } from './pages/executive-automation/executive-automation.component';
 
 export const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'persona' },
   { path: 'persona', component: PersonaStudioComponent },
   { path: 'voice', component: VoiceLabComponent },
+  { path: 'executive-automation', component: ExecutiveAutomationComponent },
   { path: 'script', component: ScriptBuilderComponent },
   { path: 'render', component: RenderQueueComponent },
   { path: 'branding', component: BrandingComponent }

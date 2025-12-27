@@ -1,0 +1,157 @@
+.panel {
+  background: white;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  max-width: 1100px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  margin: 0 0 0.5rem;
+  color: #65708a;
+}
+
+.intro {
+  margin-top: 0.5rem;
+  max-width: 650px;
+  color: #4d5566;
+}
+
+.chip {
+  background: rgba(28, 75, 130, 0.12);
+  color: var(--brand-primary);
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.profiles {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.profile {
+  border: 1px solid #e3e7ef;
+  border-radius: 12px;
+  padding: 1.25rem;
+  background: #f9fafc;
+}
+
+.profile header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.role {
+  color: #5a647a;
+  margin: 0;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.columns h4 {
+  margin-bottom: 0.5rem;
+}
+
+.columns ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: #2f3747;
+}
+
+.automation {
+  margin-top: 2.5rem;
+}
+
+.automation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.automation-card {
+  border: 1px solid #e3e7ef;
+  border-radius: 10px;
+  padding: 1rem;
+  background: white;
+}
+
+.inventory {
+  margin-top: 2.5rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #2b3242;
+}
+
+textarea {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #d3d9e6;
+  resize: vertical;
+  font-family: inherit;
+}
+
+button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background: var(--brand-primary);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.snapshot {
+  margin-top: 2rem;
+  background: #f0f4ff;
+  padding: 1.25rem;
+  border-radius: 12px;
+}
+
+.snapshot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.snapshot-item h5 {
+  margin-bottom: 0.4rem;
+}
+
+.snapshot-item p {
+  margin: 0;
+  color: #3f4759;
+  white-space: pre-wrap;
+}

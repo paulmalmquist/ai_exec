@@ -1,0 +1,115 @@
+<section class="panel">
+  <header class="header">
+    <div>
+      <p class="eyebrow">Executive Automation Inventory</p>
+      <h2>JLL PDS Leadership Blueprint</h2>
+      <p class="intro">
+        Use the leadership profiles below to capture how PDS operations run today, then document the
+        automation gaps you want the executive agent to close.
+      </p>
+    </div>
+    <div class="chip">JLL PDS</div>
+  </header>
+
+  <section class="profiles">
+    <article class="profile" *ngFor="let profile of profiles">
+      <header>
+        <h3>{{ profile.name }}</h3>
+        <p class="role">{{ profile.role }}</p>
+      </header>
+      <div class="columns">
+        <div>
+          <h4>Operational focus</h4>
+          <ul>
+            <li *ngFor="let item of profile.focus">{{ item }}</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Decision themes</h4>
+          <ul>
+            <li *ngFor="let item of profile.decisionThemes">{{ item }}</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Data inputs</h4>
+          <ul>
+            <li *ngFor="let item of profile.dataInputs">{{ item }}</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Analytical methods</h4>
+          <ul>
+            <li *ngFor="let item of profile.methods">{{ item }}</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Leadership signals</h4>
+          <ul>
+            <li *ngFor="let item of profile.leadershipSignals">{{ item }}</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section class="automation">
+    <h3>Automation opportunities to encode</h3>
+    <div class="automation-grid">
+      <article class="automation-card" *ngFor="let item of automationPatterns">
+        <h4>{{ item.title }}</h4>
+        <p>{{ item.description }}</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="inventory">
+    <h3>Fill in your current-state inventory</h3>
+    <form [formGroup]="form" (ngSubmit)="save()">
+      <div class="form-grid">
+        <label>
+          Current portfolio snapshot
+          <textarea rows="4" formControlName="portfolioSnapshot" placeholder="Programs, regions, and high-impact client accounts."></textarea>
+        </label>
+        <label>
+          Decision cadence & owners
+          <textarea rows="4" formControlName="decisionCadence" placeholder="Who approves staffing, risk, and capital decisions? How often?"></textarea>
+        </label>
+        <label>
+          Data sources & dashboards
+          <textarea rows="4" formControlName="dataSources" placeholder="Systems of record, dashboards, and KPI refresh frequency."></textarea>
+        </label>
+        <label>
+          Automation gaps to close
+          <textarea rows="4" formControlName="automationGaps" placeholder="Manual steps, bottlenecks, or delays to automate."></textarea>
+        </label>
+        <label>
+          Integration or tooling needs
+          <textarea rows="4" formControlName="integrationNeeds" placeholder="Data integrations, AI tooling, or platform consolidation needs."></textarea>
+        </label>
+        <label>
+          Success metrics & targets
+          <textarea rows="4" formControlName="successMetrics" placeholder="Metrics you want the AI executive to optimize."></textarea>
+        </label>
+        <label>
+          Governance or compliance constraints
+          <textarea rows="4" formControlName="governanceConstraints" placeholder="Security, approval, and regulatory guardrails."></textarea>
+        </label>
+        <label>
+          Change management considerations
+          <textarea rows="4" formControlName="changeManagement" placeholder="Stakeholders, comms, and enablement requirements."></textarea>
+        </label>
+      </div>
+      <button type="submit">Save inventory snapshot</button>
+    </form>
+
+    <article class="snapshot" *ngIf="savedEntries.length">
+      <h4>Saved snapshot ({{ savedAt }})</h4>
+      <div class="snapshot-grid">
+        <div class="snapshot-item" *ngFor="let entry of savedEntries">
+          <h5>{{ entry.label }}</h5>
+          <p>{{ entry.value }}</p>
+        </div>
+      </div>
+    </article>
+  </section>
+</section>
