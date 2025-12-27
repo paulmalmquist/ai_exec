@@ -1,0 +1,7 @@
+[
+  {"name": "Avery Chen", "role": "Program Manager", "region": "Americas", "skill_tags": "portfolio,office", "utilization_pct": 0.82},
+  {"name": "Jordan Patel", "role": "Cost Analyst", "region": "Americas", "skill_tags": "cost,forecast", "utilization_pct": 0.76},
+  {"name": "Priya Singh", "role": "Project Manager", "region": "EMEA", "skill_tags": "retail,schedule", "utilization_pct": 0.9},
+  {"name": "Mateo Alvarez", "role": "Risk Lead", "region": "EMEA", "skill_tags": "risk,supply_chain", "utilization_pct": 0.68},
+  {"name": "Lina Wu", "role": "Program Manager", "region": "APAC", "skill_tags": "datacenter,scope", "utilization_pct": 0.88}
+]

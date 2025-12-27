@@ -1,0 +1,11 @@
+client_id,region,sector,start_date,end_date,baseline_budget,current_forecast,actual_spend,baseline_schedule_days,forecast_schedule_days,percent_complete,safety_incidents,status
+1,Americas,Office,2024-01-01,2024-12-31,1200000,1300000,500000,365,380,0.45,1,active
+1,Americas,Industrial,2024-02-01,2024-11-30,950000,980000,420000,330,340,0.5,0,active
+2,EMEA,Retail,2024-03-01,2024-12-15,800000,860000,300000,290,300,0.35,0,active
+2,EMEA,Office,2024-01-15,2024-10-15,650000,720000,280000,270,295,0.4,2,active
+3,APAC,DataCenter,2024-04-01,2025-03-31,1500000,1650000,600000,365,400,0.5,0,active
+3,APAC,Retail,2024-05-01,2025-02-28,700000,730000,250000,300,310,0.3,1,active
+1,Americas,Office,2024-06-01,2025-04-30,900000,940000,120000,335,350,0.2,0,active
+2,EMEA,Industrial,2024-02-15,2024-12-20,1100000,1180000,500000,310,320,0.55,0,active
+3,APAC,Office,2024-01-10,2024-11-10,500000,540000,260000,305,315,0.45,0,active
+1,Americas,Retail,2024-03-10,2024-12-01,750000,790000,380000,270,280,0.6,1,active

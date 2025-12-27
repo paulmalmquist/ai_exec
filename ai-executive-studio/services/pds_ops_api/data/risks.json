@@ -1,0 +1,12 @@
+[
+  {"project_id": 1, "category": "schedule", "probability": 0.6, "impact_cost": 50000, "impact_days": 15, "mitigation_status": "open"},
+  {"project_id": 1, "category": "cost", "probability": 0.4, "impact_cost": 70000, "impact_days": 0, "mitigation_status": "open"},
+  {"project_id": 2, "category": "scope", "probability": 0.3, "impact_cost": 30000, "impact_days": 10, "mitigation_status": "open"},
+  {"project_id": 3, "category": "supply_chain", "probability": 0.5, "impact_cost": 40000, "impact_days": 20, "mitigation_status": "open"},
+  {"project_id": 4, "category": "schedule", "probability": 0.7, "impact_cost": 60000, "impact_days": 25, "mitigation_status": "open"},
+  {"project_id": 5, "category": "cost", "probability": 0.5, "impact_cost": 80000, "impact_days": 5, "mitigation_status": "open"},
+  {"project_id": 6, "category": "scope", "probability": 0.4, "impact_cost": 20000, "impact_days": 12, "mitigation_status": "open"},
+  {"project_id": 7, "category": "schedule", "probability": 0.6, "impact_cost": 35000, "impact_days": 18, "mitigation_status": "open"},
+  {"project_id": 8, "category": "safety", "probability": 0.2, "impact_cost": 15000, "impact_days": 5, "mitigation_status": "open"},
+  {"project_id": 9, "category": "schedule", "probability": 0.5, "impact_cost": 45000, "impact_days": 14, "mitigation_status": "open"}
+]
